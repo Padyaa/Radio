@@ -114,4 +114,11 @@ public class RadioTest {
         radio.setPreviousVolume();
         assertEquals(0, radio.getCurrentVolume());
     }
+
+    @Test
+    public void shouldSetCountStation() {
+        Radio radio = new Radio(30);
+        radio.setCurrentStation(11);
+        assertEquals(11, radio.getCurrentStation());
+    }
 }
